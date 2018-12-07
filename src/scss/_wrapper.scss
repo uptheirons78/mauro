@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 10vh 1fr;
+
+  .header {
+    grid-row: 1 / 2;
+  }
+
+  .container {
+    grid-row: 2 / 3;
+  }
+}
