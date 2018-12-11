@@ -2,12 +2,8 @@
   display: grid;
   grid-template-columns: 1fr repeat(11, 100px) 1fr;
   grid-template-rows: repeat(7, 100px) 1fr;
-
-  @include respond(tab-land) {
-    grid-template-columns: repeat(11, 100px);
-  }
-
   position: relative;
+
   &__title {
     grid-column: 6;
     grid-row: 1;
@@ -21,6 +17,14 @@
     letter-spacing: 2px;
     line-height: 1;
     z-index: 10;
+
+    @include respond(phone) {
+      grid-column: 2;
+      grid-row: 1;
+      font-size: 4.5rem;
+      top: 15px;
+      left: 0;
+    }
 
 
   }
@@ -56,11 +60,12 @@
       background-color: $color-dark;
 
       @include respond(big-desktop) {
-        top: 18px;
+        top: 20px;
         left: 35px;
         transform: rotate(6deg);
       }
     }
+
     &:after {
       top: 7px;
       left: 9px;
@@ -68,11 +73,12 @@
       background: linear-gradient(225deg, #13c8bc, $color-light-green);
 
       @include respond(big-desktop) {
-        top: 10px;
+        top: 12px;
         left: 18px;
         transform: rotate(3deg);
       }
     }
+
   }
 
   &__text-container {
@@ -93,7 +99,7 @@
     line-height: 1.5;
 
     @include respond(big-desktop) {
-      width: 360px;
+      width: 380px;
       grid-row: 5;
       padding: 2rem 5rem;
     }
@@ -106,7 +112,6 @@
     justify-content: flex-start;
 
     a {
-      text-decoration: none;
       transition: all .3s ease;
 
       &:not(:last-child) {
@@ -114,7 +119,7 @@
       }
 
       &:hover {
-        transform: translateY(-3px) scale(1.05);
+        transform: translateY(-5px) scale(1.05);
       }
     }
   }
