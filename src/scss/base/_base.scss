@@ -16,9 +16,9 @@ html {
     font-size: 56.25%; //9px
   }
 
-  // @include respond(phone) {
-  //   font-size: 50%; //8px
-  // }
+  @include respond(phone) {
+    font-size: 50%; //8px
+  }
 
   @include respond(big-desktop) {
     font-size: 75%; // 12px
@@ -34,10 +34,4 @@ body {
 ::selection {
   background-color: #f01;
   color: #fff;
-}
-
-/* Universal Style for a tag */
-/* I don't like text decoration on them */
-a:link, a:visited {
-  text-decoration: none;
 }
