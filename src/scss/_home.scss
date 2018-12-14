@@ -76,7 +76,7 @@
       top: 7px;
       left: 9px;
       transform: rotate(3deg);
-      background: linear-gradient(225deg, #13c8bc, $color-light-green);
+      background: linear-gradient(225deg, #13c8bc, $color-home-page);
 
       @include respond(big-desktop) {
         top: 12px;
@@ -95,7 +95,7 @@
 
     grid-column: 4;
     grid-row: 4;
-    background: linear-gradient(225deg, #13c8bc, $color-light-green);
+    background: linear-gradient(225deg, #13c8bc, $color-home-page);
     box-shadow: 0px 70px 40px -50px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 
@@ -140,7 +140,7 @@
   }
 
   .social__icon {
-    fill: $color-light-green;
+    fill: $color-home-page;
     width: 3rem;
     height: 3rem;
     background: rgba($color-dark, .8);

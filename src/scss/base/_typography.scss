@@ -1,4 +1,15 @@
+.section-title {
+  font-family: $font-primary;
+  font-size: 6rem;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
 .paragraph {
   font-family: $font-secondary;
   font-size: 1.8rem;
+
+  &--sm {
+    font-size: 1.6rem;
+  }
 }

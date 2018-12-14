@@ -1,0 +1,104 @@
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, 100px) 1fr;
+  position: relative;
+
+  &__title {
+    grid-column: 5 / 9;
+    grid-row: 2 / 3;
+    color: $color-about-page;
+    position: absolute;
+    top: -50px;
+    left: -60px;
+    z-index: 10;
+
+  }
+
+  &__info-right {
+    height: 400px;
+    grid-column: 6 / 11;
+    grid-row: 2 / 6;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 2rem 7rem;
+    box-shadow: 0px 70px 40px -50px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 5;
+    background-color: #fff;
+
+    .paragraph {
+      margin-top: 2rem;
+    }
+
+  }
+
+  &__info-left {
+    grid-column: 2 / 8;
+    grid-row: 5;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 2rem 11rem 0 3rem;
+    box-shadow: 0px 70px 40px -50px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    height: 350px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    .paragraph {
+      margin-top: 3rem;
+    }
+  }
+
+  .fake-img {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    @include respond(tab-land) {
+      width: 150px;
+      height: 150px;
+    }
+
+    &--right {
+      background-image: url("../img/coding.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      float: left;
+      shape-outside: circle();
+      margin: 2rem;
+    }
+
+    &--left {
+      background-image: url("../img/words-art.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      float: right;
+      shape-outside: circle();
+      margin: 3rem 2rem 2rem 2rem;
+    }
+
+  }
+
+  .underlined {
+    border-bottom: 3px solid $color-about-page;
+  }
+
+  .link {
+    text-decoration: none;
+    color: currentColor;
+    border-bottom: 3px solid $color-about-page;
+  }
+
+  strong {
+    color: $color-about-page;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+}
