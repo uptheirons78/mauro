@@ -1,0 +1,86 @@
+.contact-container {
+  line-height: 1.5;
+  position: relative;
+  padding: 2rem;
+  
+  &__title {
+    color: $color-contact-page;
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    left: 5px;
+
+  }
+
+  &__subtitle {
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    z-index: 9;
+    top: 14vh;
+    right: 2vw;
+  }
+
+  &__info {
+
+    text-align: justify;
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: 6rem 5rem 6rem 3rem;
+    position: absolute;
+    top: 22vh;
+    left: 2vw;
+    
+    .link:link, .link:visited {
+      color: currentColor;
+      text-decoration: none;
+      border-bottom: 2px solid $color-contact-page;
+    }
+
+  }
+
+  &__icon-container {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: 3rem 2rem;
+    position: absolute;
+    top: 52vh;
+    right: 5vw;
+
+    &__link:link, &__link:visited {
+      transition: all .3s ease;
+
+      &:not(:last-child) {
+        padding-right: 1rem;
+      }
+
+      &:hover {
+        transform: translateY(-5px) scale(1.05);
+      }
+    }
+
+    &__icon {
+      fill: $color-contact-page;
+      width: 5rem;
+      height: 5rem;
+      padding: .3rem;
+      border-radius: 3px;
+      border: 1px solid $color-contact-page;
+    }
+    
+  }
+
+  .underlined {
+    border-bottom: 2px solid $color-contact-page;
+  }
+
+
+
+}

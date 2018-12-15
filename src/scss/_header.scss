@@ -145,6 +145,14 @@
       background-image: radial-gradient(#7ed56f, #28b485);
       z-index: 100;
       transition: all .7s cubic-bezier(0.19, 1, 0.22, 1);
+      
+      &--about {
+        background-image: radial-gradient($color-about-page, #2d60c0);
+      }
+      
+      &--contact {
+        background-image: radial-gradient($color-contact-page, #dd6515);
+      }
 
       &.open {
         left: 0;
@@ -175,6 +183,14 @@
           background-position: 100%;
           color: #55c57a;
           transform: translateX(1rem);
+          
+          &.about {
+            color: $color-about-page;
+          }
+          
+          &.contact {
+            color: $color-contact-page;
+          }
         }
       }
     }

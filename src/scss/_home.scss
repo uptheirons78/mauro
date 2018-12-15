@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr repeat(11, 100px) 1fr;
-  grid-template-rows: repeat(7, 100px) 1fr;
+  grid-template-rows: repeat(7, 100px);
   position: relative;
 
   @include respond(tab-land) {
@@ -17,7 +17,7 @@
     left: -20px;
 
     font-family: $font-primary;
-    font-size: 6rem;
+    font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1;
@@ -25,14 +25,15 @@
 
     @include respond(phone) {
       grid-column: 4;
+      top: 75px;
     }
 
 
   }
 
   &__img-container {
-    width: 300px;
-    height: 450px;
+    width: 280px;
+    height: 420px;
     background-image: url("../img/programmer.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,11 +91,11 @@
   &__text-container {
     position: absolute;
     top: 120px;
-    left: 20px;
-    width: 320px;
+    left: 0;
+    width: 350px;
 
     grid-column: 4;
-    grid-row: 4;
+    grid-row: 3;
     background: linear-gradient(225deg, #13c8bc, $color-home-page);
     box-shadow: 0px 70px 40px -50px rgba(0, 0, 0, 0.2), 0px 3px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -106,8 +107,9 @@
 
     @include respond(phone) {
       grid-column: 2;
+      grid-row: 4;
       top: 80px;
-      left: 10px;
+      left: 0;
       width: 280px;
       padding: 2rem 5rem;
 
